@@ -1,0 +1,10 @@
+
+
+#-----import MODULE from PACKAGE
+
+# PACKAGE
+
+#-----__INIT__.py
+#-----module_1.py
+#-----module_2.py
+#-----module_3.py

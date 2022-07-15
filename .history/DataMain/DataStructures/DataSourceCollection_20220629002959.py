@@ -1,7 +1,21 @@
-#%%
-from . import DataConnection
+#  Diz respeito a cada dos tipos de conexão com cada uma das DATASOURCES, passando inclusive pelos métodos padrão para cada um delas.
+class DataConnection:
+    def __init__(self, name = None):
+        self.name = name
+        self.description = ""
+        self.conectionString = ""
+        self.key = ""
+    def connect(self):
+        pass
 
-#%%
+
+#  Diz respeito a cada dos agrupamentos de dados utilzados pela equipe.
+class DataSource:
+    def __init__(self, name = None, connectionsList = []):
+        self.name = name
+        self.description = ""
+        self.connectionsList = connectionsList
+
 # Criadas as instâncias das DATASOURCES e das DATACONNECTIONS, podemos caracterizar cada uma das fontes de dados com seus principais elementos.
 
 # DATASOURCES -- MONGO DB
